@@ -23,6 +23,9 @@ section::before {
 #second::before {
   content: '2 задание (01h:51m:27s)';
 }
+#four::before {
+  content: '4 задание (00h:28m:16s)';
+}
 
 h1 {
   text-transform: uppercase;
@@ -42,6 +45,7 @@ h1 {
 
 
 .secondQuest {
+  margin-top: 100%;
   padding: 3.5rem 0;
   .secondQuest__row {
     display: flex;
@@ -212,6 +216,73 @@ h1 {
           color: #6E6659;
         }
       }
+    }
+  }
+}
+
+.fourQuest {
+  padding: 0 110px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 1360px;
+  height: 650px;
+  background: url("../media/img/background6.jpg") no-repeat;
+
+  &__title {
+    font-family: 'GothamPro', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 73px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 1px;
+  }
+
+  &__text {
+    font-family: 'GothamPro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    display: flex;
+
+    &-input {
+      width: 339.25px;
+      height: 50px;
+      border: 1px solid #FFFFFF;
+      margin-right: 40px;
+    }
+
+    margin-bottom: 35px;
+  }
+
+  &__submit {
+    display: flex;
+
+    &-text {
+      max-width: 719px;
+      font-family: 'GothamPro', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0;
+      text-align: left;
+      color: #FFFFFF;
+      margin-right: 40px;
+      span {
+        color: #EB7979;
+      }
+    }
+    &-btn {
+      width: 339.25px;
     }
   }
 }

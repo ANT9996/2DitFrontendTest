@@ -24,6 +24,10 @@ section::before {
   content: "2 задание (01h:51m:27s)";
 }
 
+#four::before {
+  content: "4 задание (00h:28m:16s)";
+}
+
 h1 {
   text-transform: uppercase;
   font-family: "Parangon530C", sans-serif;
@@ -40,6 +44,7 @@ h1 {
 }
 
 .secondQuest {
+  margin-top: 100%;
   padding: 3.5rem 0;
 }
 .secondQuest .secondQuest__row {
@@ -195,6 +200,66 @@ h1 {
   letter-spacing: 0;
   text-align: left;
   color: #6E6659;
+}
+
+.fourQuest {
+  padding: 0 110px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 1360px;
+  height: 650px;
+  background: url("../media/img/background6.jpg") no-repeat;
+}
+.fourQuest__title {
+  font-family: "GothamPro", sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 73px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #FFFFFF;
+  margin-bottom: 1px;
+}
+.fourQuest__text {
+  font-family: "GothamPro", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.fourQuest__form {
+  display: flex;
+  margin-bottom: 35px;
+}
+.fourQuest__form-input {
+  width: 339.25px;
+  height: 50px;
+  border: 1px solid #FFFFFF;
+  margin-right: 40px;
+}
+.fourQuest__submit {
+  display: flex;
+}
+.fourQuest__submit-text {
+  max-width: 719px;
+  font-family: "GothamPro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #FFFFFF;
+  margin-right: 40px;
+}
+.fourQuest__submit-text span {
+  color: #EB7979;
+}
+.fourQuest__submit-btn {
+  width: 339.25px;
 }
 
 /*# sourceMappingURL=style.css.map */
