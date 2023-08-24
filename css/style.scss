@@ -4,8 +4,214 @@
   box-sizing: border-box;
 }
 
+@import "../media/fonts/style.css";
+
+body {
+  background-color: #e2e2e2;
+}
+
 .container {
   max-width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+section::before {
+  position: absolute;
+}
+
+#second::before {
+  content: '2 задание (01h:51m:27s)';
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Parangon530C", sans-serif;
+}
+
+// полупрозраный макет
+.background {
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
+  opacity: .2;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+.secondQuest {
+  padding: 3.5rem 0;
+  .secondQuest__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .secondQuest__item {
+    margin: 0 18px 30px 18px;
+    width: 290px;
+    height: 436px;
+    background: #EFF5F5;
+    transition: .2s all ease-in-out;
+    &:hover {
+      box-shadow: 0 1px 1px rgba(110, 102, 89, 0.65);
+    }
+
+    .secondQuest__item-img{
+      position: relative;
+      width: 290px;
+      height: 290px;
+
+      img {
+        width: inherit;
+        height: inherit;
+        user-select: none;
+        pointer-events: none;
+      }
+
+      .overlay {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 15px;
+        left: 15px;
+        height: 14px;
+        padding: 4px 7px;
+
+        &__icon {
+          margin-right: 4px;
+        }
+
+        &__name {
+          font-family: 'Parangon530C', sans-serif;
+          text-transform: uppercase;
+          font-size: 8px;
+          font-weight: 400;
+          line-height: 9px;
+          letter-spacing: 0;
+          text-align: left;
+          color: #FFFFFF;
+          margin-top: 2px;
+        }
+
+        &-hot {
+          background: #A32018;
+          img {
+            width: 6px;
+            height: 6px;
+          }
+        }
+        &-promo {
+          background: #E0CD1C;
+          img {
+            width: 7px;
+            height: 7px;
+          }
+        }
+        &-new {
+          background: #087A28;
+          img {
+            width: 7px;
+            height: 7px;
+          }
+        }
+      }
+      .in_stock {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 10px;
+        right: 10px;
+        width: 60px;
+        height: 14px;
+        background: #FFFFFF;
+
+        &__icon {
+          width: 9px;
+          height: 9px;
+          margin-right: 1px;
+        }
+
+        &__text {
+          font-family: Proxima Nova, sans-serif;
+          font-size: 8px;
+          font-weight: 400;
+          line-height: 10px;
+          letter-spacing: 0;
+          text-align: left;
+        }
+      }
+    }
+
+    .secondQuest__item-info {
+      padding: 15px 12.5px;
+
+      h4 {
+        font-family: Proxima Nova, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0;
+        text-align: left;
+        margin-bottom: 10px;
+        color: #6E6659;
+      }
+
+      h2 {
+        font-family: Proxima Nova, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0;
+        text-align: left;
+        margin-bottom: 10px;
+        color: #264E58;
+
+        &:hover {
+          color: #1a343c;
+          cursor: pointer;
+        }
+      }
+
+      p {
+        font-family: Proxima Nova, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0;
+        text-align: left;
+        margin-bottom: 10px;
+        color: #A5A5A5;
+
+        span {
+          color: #264E58;
+        }
+      }
+
+      h5 {
+        font-family: Proxima Nova, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0;
+        text-align: left;
+        color: #A5A5A5;
+
+        span {
+          font-family: Proxima Nova, sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 29px;
+          letter-spacing: 0;
+          text-align: left;
+          color: #6E6659;
+        }
+      }
+    }
+  }
 }

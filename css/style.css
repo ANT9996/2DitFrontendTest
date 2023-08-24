@@ -1,13 +1,200 @@
+@charset "UTF-8";
+@import "../media/fonts/style.css";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background-color: #e2e2e2;
+}
+
 .container {
   max-width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+section::before {
+  position: absolute;
+}
+
+#second::before {
+  content: "2 задание (01h:51m:27s)";
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Parangon530C", sans-serif;
+}
+
+.background {
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.2;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.secondQuest {
+  padding: 3.5rem 0;
+}
+.secondQuest .secondQuest__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.secondQuest .secondQuest__item {
+  margin: 0 18px 30px 18px;
+  width: 290px;
+  height: 436px;
+  background: #EFF5F5;
+  transition: 0.2s all ease-in-out;
+}
+.secondQuest .secondQuest__item:hover {
+  box-shadow: 0 1px 1px rgba(110, 102, 89, 0.65);
+}
+.secondQuest .secondQuest__item .secondQuest__item-img {
+  position: relative;
+  width: 290px;
+  height: 290px;
+}
+.secondQuest .secondQuest__item .secondQuest__item-img img {
+  width: inherit;
+  height: inherit;
+  user-select: none;
+  pointer-events: none;
+}
+.secondQuest .secondQuest__item .secondQuest__item-img .overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 15px;
+  left: 15px;
+  height: 14px;
+  padding: 4px 7px;
+}
+.secondQuest .secondQuest__item .secondQuest__item-img .overlay__icon {
+  margin-right: 4px;
+}
+.secondQuest .secondQuest__item .secondQuest__item-img .overlay__name {
+  font-family: "Parangon530C", sans-serif;
+  text-transform: uppercase;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 9px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #FFFFFF;
+  margin-top: 2px;
+}
+.secondQuest .secondQuest__item .secondQuest__item-img .overlay-hot {
+  background: #A32018;
+}
+.secondQuest .secondQuest__item .secondQuest__item-img .overlay-hot img {
+  width: 6px;
+  height: 6px;
+}
+.secondQuest .secondQuest__item .secondQuest__item-img .overlay-promo {
+  background: #E0CD1C;
+}
+.secondQuest .secondQuest__item .secondQuest__item-img .overlay-promo img {
+  width: 7px;
+  height: 7px;
+}
+.secondQuest .secondQuest__item .secondQuest__item-img .overlay-new {
+  background: #087A28;
+}
+.secondQuest .secondQuest__item .secondQuest__item-img .overlay-new img {
+  width: 7px;
+  height: 7px;
+}
+.secondQuest .secondQuest__item .secondQuest__item-img .in_stock {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+  right: 10px;
+  width: 60px;
+  height: 14px;
+  background: #FFFFFF;
+}
+.secondQuest .secondQuest__item .secondQuest__item-img .in_stock__icon {
+  width: 9px;
+  height: 9px;
+  margin-right: 1px;
+}
+.secondQuest .secondQuest__item .secondQuest__item-img .in_stock__text {
+  font-family: Proxima Nova, sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0;
+  text-align: left;
+}
+.secondQuest .secondQuest__item .secondQuest__item-info {
+  padding: 15px 12.5px;
+}
+.secondQuest .secondQuest__item .secondQuest__item-info h4 {
+  font-family: Proxima Nova, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #6E6659;
+}
+.secondQuest .secondQuest__item .secondQuest__item-info h2 {
+  font-family: Proxima Nova, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #264E58;
+}
+.secondQuest .secondQuest__item .secondQuest__item-info h2:hover {
+  color: #1a343c;
+  cursor: pointer;
+}
+.secondQuest .secondQuest__item .secondQuest__item-info p {
+  font-family: Proxima Nova, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #A5A5A5;
+}
+.secondQuest .secondQuest__item .secondQuest__item-info p span {
+  color: #264E58;
+}
+.secondQuest .secondQuest__item .secondQuest__item-info h5 {
+  font-family: Proxima Nova, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #A5A5A5;
+}
+.secondQuest .secondQuest__item .secondQuest__item-info h5 span {
+  font-family: Proxima Nova, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #6E6659;
 }
 
 /*# sourceMappingURL=style.css.map */
