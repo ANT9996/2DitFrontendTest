@@ -24,7 +24,7 @@ section::before {
   content: '2 задание (01h:51m:27s)';
 }
 #four::before {
-  content: '4 задание (00h:28m:16s)';
+  content: '4 задание (01h:34m:13s)';
 }
 
 h1 {
@@ -237,7 +237,9 @@ h1 {
     letter-spacing: -0.03em;
     text-align: left;
     color: #FFFFFF;
-    margin-bottom: 1px;
+    margin-top: 15px;
+    margin-left: -4px;
+    margin-bottom: 15px;
   }
 
   &__text {
@@ -257,8 +259,43 @@ h1 {
     &-input {
       width: 339.25px;
       height: 50px;
+      padding: 13px 30px;
       border: 1px solid #FFFFFF;
       margin-right: 40px;
+      background: #FFFFFF26;
+      font-family: 'GothamPro', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0;
+      color: #FFFFFF;
+      outline: none;
+      transition: .2s all;
+
+      &:hover {
+        border: 1px solid #c7c7c7;
+      }
+      &:focus {
+        border: 1px solid #c7c7c7;
+      }
+    }
+
+    label[for="tel"] {
+      position: relative;
+    }
+
+    label[for="tel"]::before {
+      position: absolute;
+      width: 30px;
+      height: 20px;
+      left: 15px;
+      top: 15px;
+      background: url("../media/img/flag.jpg") no-repeat center center;
+      content: '';
+    }
+
+    #tel {
+      padding-left: 50px;
     }
 
     margin-bottom: 35px;
@@ -279,10 +316,29 @@ h1 {
       margin-right: 40px;
       span {
         color: #EB7979;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: .2s all;
+        &:hover {
+          color: #ca6767;
+        }
       }
     }
     &-btn {
       width: 339.25px;
+      height: 50px;
+      background: #FFFFFF;
+      font-family: 'GothamPro', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0;
+      text-align: left;
+      color: #000000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0;
     }
   }
 }
