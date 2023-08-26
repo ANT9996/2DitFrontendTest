@@ -1,4 +1,7 @@
 
+
+
+// 4 задание ----------------------------------------------
 $(function () {
     $("#tel").mask("+7 (999) 999-99-99")
 })
@@ -22,3 +25,17 @@ submitButton.addEventListener('click', () => {
             submitButton.disabled = false
         });
 })
+
+
+// 1 задание --------------------------------------------
+let accordions = document.getElementById('accordions')
+let accordionsItems = accordions.querySelectorAll('.accordions__item')
+
+for (let i=0; i<=accordionsItems.length-1; i++) {
+    accordionsItems[i].id = 'accordionItem_'+i
+    let accordionContent = accordionsItems[i].querySelector('.accordions__content')
+    accordionContent.id = 'accordionContent_'+i
+    accordionsItems[i].addEventListener('click', () => {
+            document.getElementById('accordionContent_'+i).classList.toggle('show')
+    })
+}

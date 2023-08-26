@@ -20,17 +20,16 @@ section::before {
   position: absolute;
 }
 
+#first::before {
+  content: "1 задание (00h:00m:00s)";
+}
+
 #second::before {
   content: "2 задание (01h:51m:27s)";
 }
 
 #four::before {
   content: "4 задание (01h:34m:13s)";
-}
-
-h1 {
-  text-transform: uppercase;
-  font-family: "Parangon530C", sans-serif;
 }
 
 .background {
@@ -43,8 +42,90 @@ h1 {
   left: 0;
 }
 
+.firstQuest {
+  padding: 50px 51px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.firstQuest__leftSide {
+  width: 540px;
+  margin-right: 15px;
+}
+.firstQuest__leftSide h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #283F75;
+  margin-bottom: 30px;
+}
+.firstQuest__leftSide p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #5B5B5B;
+  margin-bottom: 20px;
+}
+.firstQuest__rightSide {
+  width: 560px;
+}
+.firstQuest__rightSide .accordions {
+  display: flex;
+  flex-direction: column;
+}
+.firstQuest__rightSide .accordions__item {
+  border: 1px solid #C6CDDA;
+  margin-bottom: 24px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s all;
+}
+.firstQuest__rightSide .accordions__item:hover {
+  box-shadow: -1px 0 1px #b1b8c3;
+}
+.firstQuest__rightSide .accordions__item h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.2px;
+  text-align: left;
+  color: #283F75;
+}
+.firstQuest__rightSide .accordions__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px;
+}
+.firstQuest__rightSide .accordions__title img {
+  width: 10px;
+  height: 10px;
+}
+.firstQuest__rightSide .accordions__content {
+  overflow: hidden;
+  height: 1px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #5B5B5B;
+  padding: 0 20px;
+  transition: 0.2s all;
+}
+.firstQuest__rightSide .accordions .show {
+  height: 200px;
+}
+
 .secondQuest {
-  margin-top: 100%;
   padding: 3.5rem 0;
 }
 .secondQuest .secondQuest__row {
