@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url("./helveticaneuecyr_roman.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url("./helveticaneuecyr_thin.otf") format("opentype");
+    font-weight: 300;
+}

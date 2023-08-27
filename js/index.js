@@ -39,3 +39,16 @@ for (let i=0; i<=accordionsItems.length-1; i++) {
             document.getElementById('accordionContent_'+i).classList.toggle('show')
     })
 }
+
+// 3 задание -----------------------------------------------
+
+let thirdQuest = document.getElementsByClassName('thirdQuest')[0]
+let thirdQuestItems = thirdQuest.querySelectorAll('.thirdQuest__item')
+console.log(thirdQuest)
+
+for (let i=0; i<thirdQuestItems.length; i++) {
+    thirdQuestItems[i].querySelector('.itemNumber').innerHTML = '.0'+(i+1)
+    if (i % 2 !== 0) {
+        thirdQuestItems[i].classList.add('alternativeView')
+    }
+}

@@ -25,6 +25,9 @@ section::before {
 #second::before {
   content: '2 задание (01h:51m:27s)';
 }
+#third::before {
+  content: '3 задание (01h:27m:21s)';
+}
 #four::before {
   content: '4 задание (01h:34m:13s)';
 }
@@ -41,6 +44,7 @@ section::before {
 }
 
 .firstQuest {
+  margin-top: 100%;
   padding: 50px 51px;
   display: flex;
   flex-wrap: wrap;
@@ -302,6 +306,138 @@ section::before {
           color: #6E6659;
         }
       }
+    }
+  }
+}
+
+.thirdQuest {
+  padding: 3.5rem 35px;
+  border: 1px solid;
+  @media (max-width: 500px) {
+    padding: 3.5rem 15px;
+  }
+
+  &__item {
+    position: relative;
+    padding: 85px 0 0 30px;
+    margin-bottom: 45px;
+    min-height: 550px;
+    
+    @media (max-width: 1330px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 85px 30px 0 30px!important;
+    }
+
+
+    &-title {
+      position: relative;
+      .itemNumber {
+        position: absolute;
+        top: -8px;
+        left: -35px;
+        font-family: 'HelveticaNeueCyr', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 30px;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #FFFFFF;
+        mix-blend-mode: difference;
+      }
+      h1 {
+         font-family: 'HelveticaNeueCyr', sans-serif;
+         font-size: 48px;
+         font-weight: 400;
+         line-height: 72px;
+         letter-spacing: .2px;
+         text-align: left;
+         color: #FFFFFF;
+         mix-blend-mode: difference;
+         text-transform: uppercase;
+         margin-bottom: 10px;
+        @media (max-width: 1330px) {
+          text-align: center;
+        }
+        @media (max-width: 1024px) {
+          font-size: 30px;
+          line-height: 42px;
+        }
+       }
+    }
+
+    &-text {
+      order: 2;
+      position: relative;
+      font-family: 'HelveticaNeueCyr', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: -0.4px;
+      text-align: left;
+      color: black;
+      max-width: 550px;
+      padding-left: 30px;
+      margin-left: 46px;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 1px;
+        border-left: 1px solid black;
+      }
+      @media (max-width: 1330px) {
+        margin-left: initial;
+      }
+    }
+
+    img {
+      order: 1;
+      z-index: -1;
+      margin-top: 35px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 622px;
+      height: 514px;
+      object-fit: cover;
+
+      @media (max-width: 1330px) {
+        position: initial;
+        margin-bottom: 30px;
+        width: 550px;
+        height: 300px;
+      }
+      @media (max-width: 700px) {
+        width: 300px;
+      }
+    }
+  }
+
+  .alternativeView {
+    padding: 90px 0 0 30px;
+
+    .thirdQuest__item-title {
+        margin-left: 26.5%;
+      @media (max-width: 1330px) {
+        margin-left: initial;
+      }
+    }
+
+    p {
+      margin-left: 50%;
+      @media (max-width: 1330px) {
+        margin-left: initial;
+      }
+    }
+
+    img {
+      left: 0;
+      margin-top: 14px;
+      width: 610px;
     }
   }
 }

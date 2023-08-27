@@ -28,6 +28,10 @@ section::before {
   content: "2 задание (01h:51m:27s)";
 }
 
+#third::before {
+  content: "3 задание (01h:27m:21s)";
+}
+
 #four::before {
   content: "4 задание (01h:34m:13s)";
 }
@@ -43,6 +47,7 @@ section::before {
 }
 
 .firstQuest {
+  margin-top: 100%;
   padding: 50px 51px;
   display: flex;
   flex-wrap: wrap;
@@ -281,6 +286,145 @@ section::before {
   letter-spacing: 0;
   text-align: left;
   color: #6E6659;
+}
+
+.thirdQuest {
+  padding: 3.5rem 35px;
+  border: 1px solid;
+}
+@media (max-width: 500px) {
+  .thirdQuest {
+    padding: 3.5rem 15px;
+  }
+}
+.thirdQuest__item {
+  position: relative;
+  padding: 85px 0 0 30px;
+  margin-bottom: 45px;
+  min-height: 550px;
+}
+@media (max-width: 1330px) {
+  .thirdQuest__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 85px 30px 0 30px !important;
+  }
+}
+.thirdQuest__item-title {
+  position: relative;
+}
+.thirdQuest__item-title .itemNumber {
+  position: absolute;
+  top: -8px;
+  left: -35px;
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #FFFFFF;
+  mix-blend-mode: difference;
+}
+.thirdQuest__item-title h1 {
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  color: #FFFFFF;
+  mix-blend-mode: difference;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+@media (max-width: 1330px) {
+  .thirdQuest__item-title h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .thirdQuest__item-title h1 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+.thirdQuest__item-text {
+  order: 2;
+  position: relative;
+  font-family: "HelveticaNeueCyr", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  text-align: left;
+  color: black;
+  max-width: 550px;
+  padding-left: 30px;
+  margin-left: 46px;
+}
+.thirdQuest__item-text:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  border-left: 1px solid black;
+}
+@media (max-width: 1330px) {
+  .thirdQuest__item-text {
+    margin-left: initial;
+  }
+}
+.thirdQuest__item img {
+  order: 1;
+  z-index: -1;
+  margin-top: 35px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 622px;
+  height: 514px;
+  object-fit: cover;
+}
+@media (max-width: 1330px) {
+  .thirdQuest__item img {
+    position: initial;
+    margin-bottom: 30px;
+    width: 550px;
+    height: 300px;
+  }
+}
+@media (max-width: 700px) {
+  .thirdQuest__item img {
+    width: 300px;
+  }
+}
+.thirdQuest .alternativeView {
+  padding: 90px 0 0 30px;
+}
+.thirdQuest .alternativeView .thirdQuest__item-title {
+  margin-left: 26.5%;
+}
+@media (max-width: 1330px) {
+  .thirdQuest .alternativeView .thirdQuest__item-title {
+    margin-left: initial;
+  }
+}
+.thirdQuest .alternativeView p {
+  margin-left: 50%;
+}
+@media (max-width: 1330px) {
+  .thirdQuest .alternativeView p {
+    margin-left: initial;
+  }
+}
+.thirdQuest .alternativeView img {
+  left: 0;
+  margin-top: 14px;
+  width: 610px;
 }
 
 .fourQuest {
