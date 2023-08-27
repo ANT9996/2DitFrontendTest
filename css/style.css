@@ -290,7 +290,6 @@ section::before {
 
 .thirdQuest {
   padding: 3.5rem 35px;
-  border: 1px solid;
 }
 @media (max-width: 500px) {
   .thirdQuest {
@@ -332,7 +331,7 @@ section::before {
   font-size: 48px;
   font-weight: 400;
   line-height: 72px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.3px;
   text-align: left;
   color: #FFFFFF;
   mix-blend-mode: difference;
