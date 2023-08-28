@@ -47,7 +47,6 @@ section::before {
 }
 
 .firstQuest {
-  margin-top: 100%;
   padding: 50px 51px;
   display: flex;
   flex-wrap: wrap;
@@ -128,6 +127,7 @@ section::before {
 }
 .firstQuest__rightSide .accordions .show {
   height: 200px;
+  overflow-y: auto;
 }
 
 .secondQuest {
@@ -460,6 +460,12 @@ section::before {
 .fourQuest__form {
   display: flex;
   margin-bottom: 35px;
+}
+.fourQuest__form .invalid {
+  border: 1px solid darkred;
+}
+.fourQuest__form .invalid:hover {
+  border: 1px solid red;
 }
 .fourQuest__form-input {
   width: 339.25px;

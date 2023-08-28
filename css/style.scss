@@ -44,7 +44,6 @@ section::before {
 }
 
 .firstQuest {
-  margin-top: 100%;
   padding: 50px 51px;
   display: flex;
   flex-wrap: wrap;
@@ -130,6 +129,7 @@ section::before {
       }
       .show {
         height: 200px;
+        overflow-y: auto;
       }
     }
   }
@@ -476,7 +476,12 @@ section::before {
 
   &__form {
     display: flex;
-
+    .invalid {
+      border: 1px solid darkred;
+      &:hover {
+        border: 1px solid red;
+      }
+    }
     &-input {
       width: 339.25px;
       height: 50px;
