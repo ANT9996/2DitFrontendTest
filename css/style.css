@@ -404,7 +404,7 @@ body {
   flex-direction: column;
   width: 1360px;
   height: 650px;
-  background: url("../media/img/background6.jpg") no-repeat;
+  background: url("../media/img/background6.webp") no-repeat;
 }
 .fourQuest__title {
   font-family: "GothamPro", sans-serif;
