@@ -1,5 +1,32 @@
 
 
+// 1 задание --------------------------------------------
+let accordions = document.getElementById('accordions')
+let accordionsItems = accordions.querySelectorAll('.accordions__item')
+
+for (let i=0; i<=accordionsItems.length-1; i++) {
+    accordionsItems[i].id = 'accordionItem_'+i
+    let accordionContent = accordionsItems[i].querySelector('.accordions__content')
+    accordionContent.id = 'accordionContent_'+i
+    accordionsItems[i].addEventListener('click', () => {
+        document.getElementById('accordionContent_'+i).classList.toggle('show')
+    })
+}
+
+
+
+// 3 задание -----------------------------------------------
+let thirdQuest = document.getElementsByClassName('thirdQuest')[0]
+let thirdQuestItems = thirdQuest.querySelectorAll('.thirdQuest__item')
+
+for (let i=0; i<thirdQuestItems.length; i++) {
+    thirdQuestItems[i].querySelector('.itemNumber').innerHTML = '.0'+(i+1)
+    if (i % 2 !== 0) {
+        thirdQuestItems[i].classList.add('alternativeView')
+    }
+}
+
+
 
 // 4 задание ----------------------------------------------
 $(function () {
@@ -48,28 +75,3 @@ form.addEventListener('submit', (e) => {
     submitButton.disabled = false
 })
 
-
-// 1 задание --------------------------------------------
-let accordions = document.getElementById('accordions')
-let accordionsItems = accordions.querySelectorAll('.accordions__item')
-
-for (let i=0; i<=accordionsItems.length-1; i++) {
-    accordionsItems[i].id = 'accordionItem_'+i
-    let accordionContent = accordionsItems[i].querySelector('.accordions__content')
-    accordionContent.id = 'accordionContent_'+i
-    accordionsItems[i].addEventListener('click', () => {
-            document.getElementById('accordionContent_'+i).classList.toggle('show')
-    })
-}
-
-// 3 задание -----------------------------------------------
-
-let thirdQuest = document.getElementsByClassName('thirdQuest')[0]
-let thirdQuestItems = thirdQuest.querySelectorAll('.thirdQuest__item')
-
-for (let i=0; i<thirdQuestItems.length; i++) {
-    thirdQuestItems[i].querySelector('.itemNumber').innerHTML = '.0'+(i+1)
-    if (i % 2 !== 0) {
-        thirdQuestItems[i].classList.add('alternativeView')
-    }
-}

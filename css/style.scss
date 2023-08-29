@@ -8,28 +8,14 @@
 
 body {
   background-color: #e2e2e2;
+  max-width: 1360px;
+  margin: 0 auto;
 }
 
 .container {
   max-width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
-}
-
-section::before {
-  position: absolute;
-}
-#first::before {
-  content: '1 задание (01h:05m:54s)';
-}
-#second::before {
-  content: '2 задание (01h:51m:27s)';
-}
-#third::before {
-  content: '3 задание (01h:27m:21s)';
-}
-#four::before {
-  content: '4 задание (01h:34m:13s)';
 }
 
 // полупрозраный макет
