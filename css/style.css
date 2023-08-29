@@ -17,16 +17,6 @@ body {
   margin: 0 auto;
 }
 
-.background {
-  z-index: 1;
-  user-select: none;
-  pointer-events: none;
-  opacity: 0.2;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 .firstQuest {
   padding: 50px 51px;
   display: flex;
