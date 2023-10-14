@@ -104,9 +104,10 @@ body {
         transition: .2s all;
       }
       .show {
-        height: 200px;
+        height: auto;
         overflow-y: auto;
         opacity: 1;
+        margin-bottom: 1rem;
       }
     }
   }
@@ -117,14 +118,14 @@ body {
   .secondQuest__row {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    align-items: stretch
   }
 
   .secondQuest__item {
     margin: 0 18px 30px 18px;
     width: 290px;
-    height: 436px;
+    min-height: 436px;
     background: #EFF5F5;
     transition: .2s all ease-in-out;
     &:hover {
@@ -242,6 +243,10 @@ body {
         text-align: left;
         margin-bottom: 10px;
         color: #264E58;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* number of lines to show */
+        -webkit-box-orient: vertical;
 
         &:hover {
           color: #1a343c;
@@ -542,6 +547,15 @@ body {
       justify-content: center;
       align-items: center;
       border: 0;
+      transition: all .2s ease;
+
+      &:hover {
+        box-shadow: 0 0 3px #000 inset;
+      }
+
+      &:focus {
+        transform: scale(0.99);
+      }
     }
   }
 }
